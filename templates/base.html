@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sociala - Social Network App HTML Template </title>
+
+    <link rel="stylesheet" href="{% static "css/themify-icons.css" %}">
+    <link rel="stylesheet" href="{% static "css/feather.css" %}">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "images/favicon.png" %}">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/emoji.css" %}">
+    <link rel="stylesheet" href="{% static "css/lightbox.css" %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/css/emojione.min.css"/>
+
+</head>
+
+<body class="color-theme-blue mont-font">
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<div class="preloader"></div>
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js"
+    integrity="sha512-4lykFR6C2W55I60sYddEGjieC2fU79R7GUtaqr3DzmNbo0vSaO1MfUjMoTFYYuedjfEix6uV9jVTtRCSBU/Xiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="{% static "js/plugin.js" %}"></script>
+
+<script type="text/javascript" src="{% static "js/lightbox.js" %}"></script>
+<script type="text/javascript" src="{% static "js/scripts.js" %}"></script>
+
+
+</body>
+
+</html>
