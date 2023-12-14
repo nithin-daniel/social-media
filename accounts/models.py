@@ -39,7 +39,7 @@ class User(AbstractBaseUser):
     username = models.CharField(max_length=50,unique=True)
     email = models.CharField(max_length=100,unique=True)
 
-
+    objects = UserManager()
     # required fields
     date_joined = models.DateTimeField(auto_now_add=True)
     last_login = models.DateTimeField(auto_now_add=True)
@@ -57,4 +57,3 @@ class User(AbstractBaseUser):
         return self.email
     
 
-objects = UserManager()
