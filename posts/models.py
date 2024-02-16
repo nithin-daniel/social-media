@@ -8,7 +8,6 @@ class Post(models.Model):
     post_content = models.TextField()
     post_image = models.ImageField(upload_to='post_image')
     post_like_count = models.PositiveBigIntegerField(default=0)
-    post_like_count = models.PositiveBigIntegerField(default=1)
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
 
     def __str__(self):
